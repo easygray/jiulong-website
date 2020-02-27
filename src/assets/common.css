@@ -1,0 +1,21 @@
+/* 媒体查询控制pc端还是移动端显示 */
+
+/* 屏幕大于 768px pc端显示 */
+@media only screen and (min-width: 768px) {
+  .pc-website{
+    display: block;
+  }
+  .mob-website{
+    display: none;
+  }
+}
+
+/* 屏幕小于 768px 移动端显示 */
+@media only screen and (max-width: 768px) {
+  .pc-website{
+    display: none;
+  }
+  .mob-website{
+    display: block;
+  }
+}

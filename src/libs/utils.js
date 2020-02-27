@@ -1,0 +1,37 @@
+/*
+  公共函数
+*/
+const utils = {
+  userNetwork:() => {
+
+  },
+  /**
+   * 存储localStorage
+   */
+  setStore:(name, content) =>{
+    if (!name) return;
+    if (typeof content !== 'string') {
+      content = JSON.stringify(content);
+    }
+    window.localStorage.setItem(name, content);
+  },
+  /**
+   * 获取localStorage
+   */
+  getStore:(name) => {
+    if (!name) return;
+    return window.localStorage.getItem(name);
+  },
+  /**
+   * 清除localStorage
+   */
+  clearStore:() => {
+    window.localStorage.clear();
+  },
+
+}
+
+export default utils;
+
+
+
