@@ -16,7 +16,7 @@ export default {
   },
   components: {},
   created() {
-    
+    console.log("我试试行不行用github")
   },
   mounted() {
     
